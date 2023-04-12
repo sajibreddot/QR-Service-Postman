@@ -1,1 +1,6 @@
-https://documenter.getpostman.com/view/8679882/2s93CPqsDr
+1. Please go through for QR-Service online documentation visit:
+   https://documenter.getpostman.com/view/8679882/2s93CPqsDr
+2. For QR-Service postman collection please import below collection in postman
+   QRGenerate-stage.postman_collection or
+   QRGenerate.postman_collection
+	
