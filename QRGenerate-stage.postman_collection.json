@@ -1,0 +1,1100 @@
+{
+	"info": {
+		"_postman_id": "4b155c4c-5c81-44cb-834c-03d345d0e9cf",
+		"name": "QRGenerate-stage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "banglaQRgenerate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"walletNo\": \"01675128246\",\n    \"merchantName\":\"sajib\",\n    \"merchantCity\":\"Dhaka\"    \n}"
+				},
+				"url": {
+					"raw": "http://103.191.178.87:8080/QRService-0.0.1-STAGING/api/v1/QRGenerate/banglaQRGenerate",
+					"protocol": "http",
+					"host": [
+						"103",
+						"191",
+						"178",
+						"87"
+					],
+					"port": "8080",
+					"path": [
+						"QRService-0.0.1-STAGING",
+						"api",
+						"v1",
+						"QRGenerate",
+						"banglaQRGenerate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "banglaQRgenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"walletNo\": \"01675128246\",\n    \"merchantName\":\"sajib\",\n    \"merchantCity\":\"Dhaka\"    \n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/banglaQRGenerate",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"banglaQRGenerate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 09:07:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"qrcode\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAEVElEQVR42u3dUW4bMQxF0ex/0+kaAvFSsnvep2GPZ6TjgqIU9OdXJMiPIRCwBCwBSwQsAUvAEgFLwBKwRMASsAQsEbAELAFLBCz5Olg/QcYeKfjeqWu+9uzdvIAFFlhggQUWWKcPMDUQf52Av372BNPUOExN3l/HZH9+wQILLLDAAgusDRDFQJxc8+Q9xTMWi4Nb8wIWWGCBBRZYYL0LqyhyX8Y9dW9ggQUWWGCBBRZYk5NaNDNPiuuTH1IBGiywwAILLLDA+mxYt4BOfbZeHJy8/4V5AQsssMACCyyw9mBNZao49Xo3L2B5HSwgwAILrBbWZjY3dIsfw2aj9aFZAwsssMACCyywlov3l69zArcYw6km88nrYIEFFlhggQXWHVhTG5lTB/GKydhEVoxzvRkPFlhggQUWWGC1DdK6mblZ5E4VwicHFYv37DRgwQILLLDAAgusDVhTTc56cE8QFAuaemy7Ah8ssMACCyywwNpIMXk1gs0f2CbQnWuCBRZYYIEFFlgbaDYbg1MLgqnPFpNaHFQECyywwAILLLDeOvNeYPoJUiCeWnwUTdd6AQEWWGCBBRZYYO0V7/XrdSOxLurr53qngQwWWGCBBRZYYN2EVTcVu+J09t6mAL3w7GCBBRZYYIEF1t4m9K1BLzZuTyamnuACIlhggQUWWGCBdQdWgXJq4l9YHLy2ib5T1IMFFlhggQUWWNuA6kXAZuOxWDTcaqjO3jNYYIEFFlhggVU95FRDr27eFhu6ReFfNJnDf0rAAgsssMACC6wvyAsFcvFDKorxr1oVggUWWGCBBdaXwZoqeIsHvnWAbnPcint44qAfWGCBBRZYYIE1fkBs8w8BpjZ0a0x14/cji3ewwAILLLDA+mJYm1CK7yr+iKP43uLe6oUOWGCBBRZYYIH1e/0/wtxEMFWY1yjrgn3nACBYYIEFFlhggTVZmL/Q2LyFvmh43mrYggUWWGCBBRZY92FtFtqbEKcmeGoi643zpw/6gQUWWGCBBdZ/AqsuHl8+uFcvGuom6tLTgQUWWGCBBRZYjxfvU4gLEHUDebMROjtWYIEFFlhggQXW5OBuNg+nDrtNHY6bOsD4GjiwwAILLLDAAustWMVht6li8xasYmwLxE+cbgALLLDAAgsssEYebKrwnHq9vofXAIEFFlhggQUWWPdh1bkFd3Oj/YUFQTiDYIEFFlhggQXW4cQXReKtzem6Kbo5bnVDGCywwAILLLDA2muQ1tcpNoyLydvcOK8XQ2CBBRZYYIEF1n1Ym5O02ZA8wf3CAqUeZ7DAAgsssMAC67Nh1YVz3dSduuYLP1qwwAILLLDAAuv7YdXF9a2Cum4gzzZFwQILLLDAAgus1zehXwZaNCFrcPvzCxZYYIEFFlhgTW7u1pNRFNRFo3Vq8mqUT29CgwUWWGCBBdZ/CEsELAFLwBIBS8ASsETAErAELBGwBCwBSwQsAUvAEgFLwJKPzT8o62bXGZpf+gAAAABJRU5ErkJggg==\"\n}"
+				},
+				{
+					"name": "banglaQRgenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"walletNo\": \"01675128246\",\n    \"merchantName\":\"sajib\",\n    \"merchantCity\":\"Dhaka\"    \n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/banglaQRGenerate",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"banglaQRGenerate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2023 06:48:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"qrcode\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAFe0lEQVR42u3dUW7bQAwFQN//0u0NAph85Gqt4afQOJJ2BFOPG/TzT6mB+rgFCiwFlgJLKbAUWAospcBSYCmwlAJLgaXAUgosBZYCSymwFFgKLKUOw/r06o8P/OrIV6dau4q5U43fw4VPBgsssMACK77GfxypLXbtDtYY1YTVFrJJf25NwQILLLDA+urK4+vXvBe1T45TazaIC6sDFlhggQXW3KnPXWfK9xyRWheYauzAAgsssMB6fo9V66hSy5/KvucGG5urAxZYYIEF1mby/tWviL/np5Yt3lYusAYLLLDAAiveBDQDCEf6R9670c8RsMACax7WQi3sG57b+Fv78VTreXjhwAILLLDeAavZUc11ZvGNv6kLTI0fmmnOXOAOFlhggfU2WM08Oh7TpwLlI5vJ5vY6L8zLwQILLLDA+oSqyXFud+9cZr3QDqZ6ULDAAgsssJpf3ql/nJpqL4T7zWegdueb27mu2egHFlhggfX4v9KJL1u8+au98Ke2RqXCjlSD+PQeCyywwALr5rhhLqafe8+fSyuONGQLAxKwwAILrNfCSu2Rindm8bi/+cA0M/R4R/XjzTtYYIEF1okeayFDn1vsuYF388dr5xzfFgYWWGCBBdbcG3uq84inAzWXC1FCfDYf9wQWWGCB9TZYc5FuyuXcOTc3/s6NrhciErDAAgsssFJdV7MtmEve46/3tduSutJURAIWWGCBBdZcjhx/r071hakcZDOySTV2YIEFFlhgpXqa2jt8qhNqLkntLje3l8WnBQsdFVhggQXWa2E1Lya1j3nhNOJN0sL44WyBBRZYYL0W1lyKnfI0l7wvNJHNNu6rVg8ssMACC6ymnlSfsZm8z0Ubc3vINjdGgwUWWGCBVUMT/8pPDbObE4X4zrNUTD+33Q0ssMACC6zaQqZenlPv3rX1SwUHc41UakgAFlhggQVW/EW9dlNqb7+p5H3unONXmjpyTdwAFlhggfUwWKnA/WxzE9/yNXftTRC1KTtYYIEFFlhxYc1EuNnubKJJhem1JumnknewwAILrJtnhc3ln9trFb+uFL7U/Vlo9cACCyywwJoLuOd2MsXH20fwzc0qHtFjgQUWWGDdA6v2ld88stCHpR6GuaV9SIwCFlhggQVWc5GaNyWVs6euIpW5xPPxBUZggQUWWK+FdSTXTrUg8QCi9jDEm7/4wwAWWGCBBVb8Wzz1j2vrNxde1xYp3r01bwJYYIEFFljxJmmu72mm/KnVis+550AsbIADCyywwHobrLm9Vk1hzRVtLu3CTuK5UQdYYIEFFlhzEfzmaHau3Uk1WwvJSHyYDRZYYIEFVjxBmNvmO/eBqd4o/p7/kNkzWGCBBRZYzUh3IWdPia99TqrDi7ee1yTvYIEFFlhPhTUXQze7gVQIvjDV3hwkPH0/FlhggQXWPbDir8GxL/h0plA751R/GZ8ELOQOYIEFFlgvgXVkNNvM2ZuL3byu1Pk0iVzcvIMFFlhg3fMHq6msudarzUUAc5uV4xP91AWCBRZYYIEVf+Gf28CUGoqnhrXx6XjzVK8ZQoMFFlhg/QSsppXmO3Oqbaqdc3zSnBpa/EKPBRZYYIH1+P+vMB6418L9+ES29tvngpXNtAIssMACC6zad3bzp+IdzGYo0OyfUlHLL/RYYIEFFlgXwkp998eFNdev2ZQcmTRvdlRggQUWWGDFYaX2Ns01W0ceoWazBRZYYIEF1tWw4kfmIoBUzl5r2uJ3AyywwAILrIXkvTm+bW5XmssUmsuWOue5SQBYYIEFFljx/VhxqfG1WUDcnDSnHmmwwAILLLCUAkuBpcBSCiwFlgJLKbAUWAospcBSYCmwlAJLgaXAUgosBZYCSymwFFjqF+s/Z1Z+BlMj+kgAAAAASUVORK5CYII=\"\n}"
+				}
+			]
+		},
+		{
+			"name": "banglaQRDecode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/banglaQRdecode",
+					"protocol": "http",
+					"host": [
+						"103",
+						"36",
+						"101",
+						"99"
+					],
+					"port": "8080",
+					"path": [
+						"QRService",
+						"api",
+						"v1",
+						"QRGenerate",
+						"banglaQRdecode"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "banglaQRDecode",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payload\":\"0002010102112621001702FSIB01675128246520412345302505502015802BD5906RedDot6005Dhaka63045B7C\"\r\n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/banglaQRdecode",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"banglaQRdecode"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 09:07:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"walletNo\": \"01675128246\",\n    \"message\": \"Success\",\n    \"merchantName\": \"RedDot\",\n    \"merchantAddress\": \"Dhaka\",\n    \"acquirerID\": \"FSIB\",\n    \"acquirerInstitutionType\": \"02\",\n    \"pointOfInitializationMethod\": \"11\",\n    \"success\": true\n}"
+				},
+				{
+					"name": "banglaQRDecode",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payload\":\"0002010102112621001702FSIB01675128246520412345302505502015802BD5906RedDot6005Dhaka63045B7C\"\r\n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/banglaQRdecode",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"banglaQRdecode"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2023 06:48:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"walletNo\": \"01675128246\",\n    \"message\": \"Success\",\n    \"merchantName\": \"RedDot\",\n    \"merchantAddress\": \"Dhaka\",\n    \"acquirerID\": \"FSIB\",\n    \"acquirerInstitutionType\": \"02\",\n    \"pointOfInitializationMethod\": \"11\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "bulkGenerate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/bulkQRGenerate?type=agent",
+					"protocol": "http",
+					"host": [
+						"103",
+						"36",
+						"101",
+						"99"
+					],
+					"port": "8080",
+					"path": [
+						"QRService",
+						"api",
+						"v1",
+						"QRGenerate",
+						"bulkQRGenerate"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "agent"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bulkGenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/nazrul.sajib/Desktop/QRExcel.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/bulkQRGenerate?type=agent",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"bulkQRGenerate"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "agent"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 09:07:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"QR generated successfully\",\n    \"success\": true\n}"
+				},
+				{
+					"name": "bulkGenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/nazrul.sajib/Desktop/QRExcel.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/bulkQRGenerate?type=agent",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"bulkQRGenerate"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "agent"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2023 06:48:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"QR generated successfully\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "AgentOrCustomerQRGenerate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"walletNo\": \"01675128246\",\n    \"type\": \"agent\"\n}"
+				},
+				"url": {
+					"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/AgentOrCustomerQRGenerate",
+					"protocol": "http",
+					"host": [
+						"103",
+						"36",
+						"101",
+						"99"
+					],
+					"port": "8080",
+					"path": [
+						"QRService",
+						"api",
+						"v1",
+						"QRGenerate",
+						"AgentOrCustomerQRGenerate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AgentOrCustomerQRGenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"walletNo\": \"017772859980\",\n    \"type\": \"customer\"\n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/AgentOrCustomerQRGenerate",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"AgentOrCustomerQRGenerate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2023 06:48:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"qrcode\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAFi0lEQVR42u3cW47bQAwEQN//0skBAgT2dJOS7OLnPmxLU8JympO8/ig1UC+3QIGlwFJgKQWWAkuBpRRYCiwFllJgKbAUWEqBpcBSYCkFlgJLgaXUxbBeWb3zgv9+650f/s8rn13gO9965ysL93DhlcECCyywwKqv1sIindk9Y11/Kj66wLlnCSywwAILrLPbHa7fRx1DvVuao1bb1WefcO6jggUWWGCBFQYHrcYlTD1aHdXZJ2zFMWCBBRZYYH1HjxV+jLmJQgtNGNDoscACCyywvjV5r/dGrcw6XIBWM7qwOmCBBRZYYLV6kdZW2VdGwxewfAUssMC6tsLDSfU0PHyo6j1WvRMaXEqwwAILrN+ANZdQny1A/bRx/QJDNGHgHkb5YIEFFlhgnbU79Ty6Fe6H3Vt9oLtwCAwssMACC6xL4oZ62ts6+Bu+TuuhCm9CfcIBFlhggQVW66bUDwzVVzTM0MPjU3Pnsa49ZwYWWGCB9Wuw6gF3GBzMbcs3B971jvPBzTtYYIEF1nN2heF2eq65aS1Aq21q3br6SOCmZ97BAgsssJ4DqxVn17fTrQZoLlhpPVSt89A3Td7BAgsssO4KK7y59SUJO5h6cLDw7q37/LzkHSywwALrrrDqPVa98wgjgLmFbPWXm9cOFlhggQVWmP+GMlrHucJ4fWF+ELawl0yjwQILLLDAOsO3kJi30LSInMUWrSHBY85jgQUWWGB9xQnSuVYm3DzXl7Y1G5hLNO6evIMFFlhgfResekgxN39tvWAYrNSH6yE1sMACCyywWtewGeWHV7EwjW4RqfdzYIEFFlhg1bulMB8Pm5v6LDxM3uttXD2vBwsssMACaw5WeJ0L2/J6Xj8XeS80tWCBBRZYYIVxw0JH1fJ9Jr517QvPW/2cN1hggQUWWHPN1lxw8NG36uexwgem9cqb6TxYYIEF1o/AasXQZz3EQm/Uuop6Ozh35++eY4EFFlhg3QxWa7rZyr7nHo/wt0KFLRCt/hIssMACC6y5CL61La/PlVsfPlzaVvI+F7iDBRZYYP0srFbW3MqIF4KD0Pe1LdpjeiywwAILrNvDWjhvFHpqfcLWk9PydJYphD8MFlhggQVWeOPmvtVK3lsxwcL8oNW53n0IDRZYYIF1e1hzwXQ9lA836nMHoxfu2NwzCRZYYIEF1tlMtPXr9dYhbFwW5gdz5sACCyywwNqENZcgnL1X+DGuzeLDN/2qHgsssMAC69Lkfc5BvXs7+/BzDeJNspKbjnTAAgsssG4P65XVgoPWhr/VDs694ObtBQsssMACq9VVtM7ptsL9sLmZiy1as/CzIQFYYIEFFlib++Ew2pgbiteXrT4hbg2qHzPSAQsssMC6K6xWRxXelLkd+1zg3noUw9e5aY8FFlhggfUVsBb+rs91HnNL23oCW9f1vB4LLLDAAutSWGctyIKMVjJSX8h6w9pq/sACCyywwFrwdBbKt5L3Oej1tCJsT1sNGVhggQUWWAsJQmtX3xonh4e35jqYV7sWMiCwwAILrF+DFXZCZ9vps9aq1SDWx8DhgeZW8wcWWGCBBdYlVT/ktLnzr69xvYlcCBfAAgsssH4WVmvT2xqg1huOcCHDe3im+eyuggUWWGCBVc8U6knE4C3I+pUweQ9nFa0e615xA1hggQXWd/1vM/W//QvJcisWr3dCm5k+WGCBBRZYl8Bq7fzD5T9rShYm3y18j0newQILLLB+D9bc9Pej92o1ZGF0HgY99dE+WGCBBRZYc8n73KmpsFtqNUlnducOb4VTB7DAAgsssMK0dzNcCLul1hS5FYuHDp4XN4AFFlhg/cy/0lHfV2ApsBRYCiylwFJgKbCUAkuBpcBSCiwFlgJLKbAUWAospcBSYCmwlAJL3bX+AgAqps/c8IDlAAAAAElFTkSuQmCC\"\n}"
+				},
+				{
+					"name": "AgentOrCustomerQRGenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"walletNo\": \"017772859980\",\n    \"type\": \"customer\"\n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/AgentOrCustomerQRGenerate",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"AgentOrCustomerQRGenerate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 09:07:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"qrcode\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAESElEQVR42u3dUY7bMAxF0ex/0+kapuallOS8zyDjWNZRQVMC+nqLBHl5BAKWgCVgiYAlYAlYImAJWAKWCFgCloAlApaAJWCJgCVfB+sVZGxIwe9OXfO2sXfzAhZYYIEFFlhgPR3A1IOYmsgn339yb08m/q/P9snf7swvWGCBBRZYYIG1DeLJADYnZmqMUxNZjKsDChZYYIEFFlhg3QirmLDiOpuIb17wYIEFFlhggQXWZxfvZ5t+z5uTUyjBAgsssMACC6zfgnUKaN3AnGpaTh24c7oBLLDAAgsssL4f1g0Pzuc78wKWz8ECAiywwGphbWaz6VcshrqQv3TWwAILLLDAAgus5eL95uv8dbxTC2bq3orPwQILLLDAAgusu4r3+lDbk7/dPKy3eT+b9wwWWGCBBRZYYO3BOrXJemry6oOKxXemmr1ggQUWWGCBBVYL64YN2lNF8WbjcQpKsWjBAgsssMACC6y7GqT14bup+6kP/RUQ6yYzWGCBBRZYYIG1V7zXyKZwn4JeF/L3PH+wwAILLLDAAqsqzKcmfiqbi2Hz/ut7AwsssMACCyywzhfv9ebu5m9tFuybLxb1PxZggQUWWGCBBVYLqz5QVj/ozabxFPQbxg4WWGCBBRZYYL2P/wcC9UM/9dKwUyDvQAQLLLDAAgsssM7A2iz2p3DXTcVisdWF/yx0sMACCyywwAJrA1bRzLxh03dqsRXQnxTmH1O8gwUWWGCBBdaXwZpqBtYF5qlDeXWzdAfHgeIdLLDAAgsssMBaK2CnCvbNRVJvhNeL4briHSywwAILLLB+BFa90Tv1EIui+1SjuLiHbkMaLLDAAgsssMDagFUPuJiMzSbt1OLcPEgIFlhggQUWWGCdaZCeaiTWhWqBoC7M64Y2WGCBBRZYYIHVwrphMp40WuuDfre9BIQzDhZYYIEFFlhgDaIpHsQm+qlm6anN9Ro3WGCBBRZYYIF1Btbmxuepzea64Vlcv34pAQsssMACCyywzhfvxYA3r1MU3cXLwdkXI7DAAgsssMACa6OpWBTdp14sniykoqgvvg8WWGCBBRZYYH0GrHoy6hSgTx3cu3oTGiywwAILLLDASjc1byjwp35rs9C+YVGBBRZYYIEFFljzsOrBTG3Q1sXv1Mb8JiCwwAILLLDAAus8rDrFA62bnEVzslgMSzMIFlhggQUWWGANNhVPbawW+IqJn7qf4ndnIYIFFlhggQUWWNUmdH2dAkTdaC0WTP0yBBZYYIEFFlhgnYc1VSTWG8abOD79BQUssMACCyywwPp+WPVkT03kO8ipZwsWWGCBBRZYYCne/6eRuPmiUB9UfLKZPQsOLLDAAgsssMCahPULQOum69mie+q3wAILLLDAAgusqllXTMYnbkI/uc79B/rAAgsssMACC6xJWCJgCVgClghYApaAJQKWgCVgiYAlYAlYImAJWAKWCFgClnxs/gG57gc3icNPjwAAAABJRU5ErkJggg==\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DecodeAgentCustomerQR",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/DecodeAgentOrCustomerQR?secret=5BYHVgFKdRPjk/Ptb+axNdd4Gz7dQOUFchp9rR8j2ss=",
+					"protocol": "http",
+					"host": [
+						"103",
+						"36",
+						"101",
+						"99"
+					],
+					"port": "8080",
+					"path": [
+						"QRService",
+						"api",
+						"v1",
+						"QRGenerate",
+						"DecodeAgentOrCustomerQR"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "5BYHVgFKdRPjk/Ptb+axNdd4Gz7dQOUFchp9rR8j2ss="
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DecodeAgentCustomerQR",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"walletNo\": \"01675128246\",\n    \"type\": \"agent\"\n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/DecodeAgentOrCustomerQR?secret=55NjG68hyf9fDg5e9aKLZtd4Gz7dQOUFchp9rR8j2ss=",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"DecodeAgentOrCustomerQR"
+							],
+							"query": [
+								{
+									"key": "secret",
+									"value": "55NjG68hyf9fDg5e9aKLZtd4Gz7dQOUFchp9rR8j2ss="
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2023 18:36:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"walletNo\": \"016751282467\",\n    \"success\": true\n}"
+				},
+				{
+					"name": "DecodeAgentCustomerQR",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/DecodeAgentOrCustomerQR?secret=qOc40pwLKurwKrQCiaRRoCSbwTmlValLdYaep9iqo5s=",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"DecodeAgentOrCustomerQR"
+							],
+							"query": [
+								{
+									"key": "secret",
+									"value": "qOc40pwLKurwKrQCiaRRoCSbwTmlValLdYaep9iqo5s="
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 09:08:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"walletNo\": \"017772859980\",\n    \"success\": true\n}"
+				},
+				{
+					"name": "AgentOrCustomerQRGenerate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"walletNo\": \"017772859980\",\n    \"type\": \"customer\"\n}"
+						},
+						"url": {
+							"raw": "http://103.36.101.99:8080/QRService/api/v1/QRGenerate/AgentOrCustomerQRGenerate",
+							"protocol": "http",
+							"host": [
+								"103",
+								"36",
+								"101",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"QRService",
+								"api",
+								"v1",
+								"QRGenerate",
+								"AgentOrCustomerQRGenerate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2023 06:48:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=20"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"qrcode\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAFi0lEQVR42u3cW47bQAwEQN//0skBAgT2dJOS7OLnPmxLU8JympO8/ig1UC+3QIGlwFJgKQWWAkuBpRRYCiwFllJgKbAUWEqBpcBSYCkFlgJLgaXUxbBeWb3zgv9+650f/s8rn13gO9965ysL93DhlcECCyywwKqv1sIindk9Y11/Kj66wLlnCSywwAILrLPbHa7fRx1DvVuao1bb1WefcO6jggUWWGCBFQYHrcYlTD1aHdXZJ2zFMWCBBRZYYH1HjxV+jLmJQgtNGNDoscACCyywvjV5r/dGrcw6XIBWM7qwOmCBBRZYYLV6kdZW2VdGwxewfAUssMC6tsLDSfU0PHyo6j1WvRMaXEqwwAILrN+ANZdQny1A/bRx/QJDNGHgHkb5YIEFFlhgnbU79Ty6Fe6H3Vt9oLtwCAwssMACC6xL4oZ62ts6+Bu+TuuhCm9CfcIBFlhggQVW66bUDwzVVzTM0MPjU3Pnsa49ZwYWWGCB9Wuw6gF3GBzMbcs3B971jvPBzTtYYIEF1nN2heF2eq65aS1Aq21q3br6SOCmZ97BAgsssJ4DqxVn17fTrQZoLlhpPVSt89A3Td7BAgsssO4KK7y59SUJO5h6cLDw7q37/LzkHSywwALrrrDqPVa98wgjgLmFbPWXm9cOFlhggQVWmP+GMlrHucJ4fWF+ELawl0yjwQILLLDAOsO3kJi30LSInMUWrSHBY85jgQUWWGB9xQnSuVYm3DzXl7Y1G5hLNO6evIMFFlhgfResekgxN39tvWAYrNSH6yE1sMACCyywWtewGeWHV7EwjW4RqfdzYIEFFlhg1bulMB8Pm5v6LDxM3uttXD2vBwsssMACaw5WeJ0L2/J6Xj8XeS80tWCBBRZYYIVxw0JH1fJ9Jr517QvPW/2cN1hggQUWWHPN1lxw8NG36uexwgem9cqb6TxYYIEF1o/AasXQZz3EQm/Uuop6Ozh35++eY4EFFlhg3QxWa7rZyr7nHo/wt0KFLRCt/hIssMACC6y5CL61La/PlVsfPlzaVvI+F7iDBRZYYP0srFbW3MqIF4KD0Pe1LdpjeiywwAILrNvDWjhvFHpqfcLWk9PydJYphD8MFlhggQVWeOPmvtVK3lsxwcL8oNW53n0IDRZYYIF1e1hzwXQ9lA836nMHoxfu2NwzCRZYYIEF1tlMtPXr9dYhbFwW5gdz5sACCyywwNqENZcgnL1X+DGuzeLDN/2qHgsssMAC69Lkfc5BvXs7+/BzDeJNspKbjnTAAgsssG4P65XVgoPWhr/VDs694ObtBQsssMACq9VVtM7ptsL9sLmZiy1as/CzIQFYYIEFFlib++Ew2pgbiteXrT4hbg2qHzPSAQsssMC6K6xWRxXelLkd+1zg3noUw9e5aY8FFlhggfUVsBb+rs91HnNL23oCW9f1vB4LLLDAAutSWGctyIKMVjJSX8h6w9pq/sACCyywwFrwdBbKt5L3Oej1tCJsT1sNGVhggQUWWAsJQmtX3xonh4e35jqYV7sWMiCwwAILrF+DFXZCZ9vps9aq1SDWx8DhgeZW8wcWWGCBBdYlVT/ktLnzr69xvYlcCBfAAgsssH4WVmvT2xqg1huOcCHDe3im+eyuggUWWGCBVc8U6knE4C3I+pUweQ9nFa0e615xA1hggQXWd/1vM/W//QvJcisWr3dCm5k+WGCBBRZYl8Bq7fzD5T9rShYm3y18j0newQILLLB+D9bc9Pej92o1ZGF0HgY99dE+WGCBBRZYc8n73KmpsFtqNUlnducOb4VTB7DAAgsssMK0dzNcCLul1hS5FYuHDp4XN4AFFlhg/cy/0lHfV2ApsBRYCiylwFJgKbCUAkuBpcBSCiwFlgJLKbAUWAospcBSYCmwlAJL3bX+AgAqps/c8IDlAAAAAElFTkSuQmCC\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://api.firstcash.fsiblbd.com/api_middleware-0.0.2-RELEASE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.firstcash.fsiblbd.com/api_middleware-0.0.2-RELEASE Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
